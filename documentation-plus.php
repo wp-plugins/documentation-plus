@@ -3,7 +3,7 @@
 Plugin Name: Documentation Plus
 Plugin URI: http://paratheme.com/items/documentation_plus-html-css3-responsive-accordion-grid-for-wordpress/
 Description: Fully responsive and mobile ready accordion grid for wordpress.
-Version: 2.0.1
+Version: 1.0
 Author: paratheme
 Author URI: http://paratheme.com
 License: Custom support@paratheme.com

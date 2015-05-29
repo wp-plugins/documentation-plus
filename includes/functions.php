@@ -58,7 +58,7 @@ function documentation_plus_archive($atts, $content = null )
 			
 			$html.= '<div class="single">';
 			
-			$html.= '<div class="thumb">'.get_the_post_thumbnail(get_the_ID(),'large').'</div>';			
+			$html.= '<div class="thumb"><a href="'.get_permalink().'">'.get_the_post_thumbnail(get_the_ID(),'large').'</a></div>';
 			$html.= '<div class="title"><a href="'.get_permalink().'">'.$title_icon.get_the_title().'</a></div>';			
 			
 			$documentation_plus = get_post_meta( get_the_ID(), 'documentation_plus', true );
@@ -126,7 +126,7 @@ add_shortcode('documentation_plus_archive', 'documentation_plus_archive');
 function documentation_plus_html($post_id)
 
 	{
-		
+		$doc_title = get_the_title();
 		$documentation_plus = get_post_meta( $post_id, 'documentation_plus', true );	
 
 		//var_dump($documentation_plus);
@@ -138,6 +138,10 @@ function documentation_plus_html($post_id)
 			{
 				$documentation_section_title = array('0'=>'');
 			}
+		
+
+	
+		
 		
 		
 					
@@ -170,6 +174,17 @@ function documentation_plus_html($post_id)
 				$html .= '</div>';
 			}
 		$html .= '</div>';
+		
+		
+		if(!empty($documentation_plus['buy_link']))
+			{
+				$html .= '<div class="doc-buy">'.$doc_title.'<a target="_blank" class="buy-button" href="'.$documentation_plus['buy_link'].'">Buy Now</a></div>';
+			}
+		
+		
+		
+
+		
 		$html .= '</div>';
 		
 			

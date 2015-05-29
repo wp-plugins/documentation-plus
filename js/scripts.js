@@ -2,6 +2,27 @@ jQuery(document).ready(function($)
 	{
 
 
+		$(document).on('click', '.doc-buy', function()
+			{	
+				
+				
+				if($(this).hasClass('down'))
+					{
+						$(this).css('height','100px');
+						$(this).removeClass('down');
+					}
+				else
+					{
+						$(this).css('height','10px');
+						$(this).addClass('down');
+					}
+				
+				
+				
+			})
+
+
+
 
 		$(document).on('keyup', '#documentation_metabox .section-panel input', function()
 			{

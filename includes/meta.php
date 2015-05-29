@@ -119,6 +119,14 @@ function meta_boxes_documentation_input( $post ) {
 
             <li style="display: block;" class="box1 tab-box active ">
 				<div class="option-box">
+                    <p class="option-title">Product Link(Buy Link)</p>
+                    <p class="option-info">URL to your orginal prduct link(buy link)</p>
+                    
+                    <input  type="text" placeholder="url" name="documentation_plus[buy_link]" value="<?php if(!empty($documentation_plus['buy_link'])) echo $documentation_plus['buy_link']; ?>"  />
+                    
+               	</div>
+            
+				<div class="option-box">
                     <p class="option-title">Content</p>
                     <p class="option-info"></p>
                     

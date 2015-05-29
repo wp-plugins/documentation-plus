@@ -58,7 +58,7 @@ then paste this shortcode anywhere in your page to display Documentation<br />
 
 Simply copy you single.php and rename single-documentation.php 
 
-remove the fucntion `the_content();` or `get_the_content();` and replace with `&lt;?php echo do_shortcode("[documentation_plus id='".get_the_ID()."' ]"); ?&gt;`
+remove the fucntion `the_content();` or `get_the_content();` and replace with `<?php echo do_shortcode("[documentation_plus id='".get_the_ID()."' ]"); ?>`
 
 
 
@@ -69,8 +69,8 @@ you can display all documentation via archive with pagination support. use follo
 
 this short-code also has some parameter
 
-# title_icon , use for font awesome icon or html, ex: `&lt;i class="fa fa-file-text-o"></i&gt; `
-# list_icon , use for font awesome icon or html, ex: `&lt;i class="fa fa-file-text-o"></i&gt; `
+# title_icon , use for font awesome icon or html, ex: `&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt; `
+# list_icon , use for font awesome icon or html, ex: `&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt; `
 # section_display , yes or no
 # posts_per_page , integer value, default 5.
 

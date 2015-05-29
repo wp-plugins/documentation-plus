@@ -69,10 +69,10 @@ you can display all documentation via archive with pagination support. use follo
 
 this short-code also has some parameter
 
-# title_icon , use for font awesome icon or html, ex: `&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt; `
-# list_icon , use for font awesome icon or html, ex: `&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt; `
-# section_display , yes or no
-# posts_per_page , integer value, default 5.
+* title_icon , use for font awesome icon or html, ex: `&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt; `
+* list_icon , use for font awesome icon or html, ex: `&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt; `
+* section_display , yes or no
+* posts_per_page , integer value, default 5.
 
 
 

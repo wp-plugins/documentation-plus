@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Admin CSS*/
+
+#documentation_metabox ul.documentation_bg_img_list{}
+
+#documentation_metabox ul.documentation_bg_img_list li {
+  display: inline-block;
+  margin: 5px;
+}
+#documentation_metabox ul.documentation_bg_img_list li.bg-selected {}
+
+#documentation_metabox ul.documentation_bg_img_list li img{border: 2px solid #ffffff;}
+
+#documentation_metabox ul.documentation_bg_img_list li.bg-selected img{
+  border: 2px solid #ff5a11;
+}
+
+
+#documentation_metabox .documentation_icons_custom {
+  display: none;
+  margin-top: 15px;
+}
+
+#documentation_metabox .documentation_icons_custom_plus {
+  background: none repeat scroll 0 0 / 100% auto rgb(221, 221, 221);
+  display: inline-block;
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(255, 89, 16);
+}
+
+#documentation_metabox .documentation_icons_custom_minus {
+  background: none repeat scroll 0 0 / 100% auto rgb(221, 221, 221);
+  display: inline-block;
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(255, 89, 16);
+}
+
+
+
+#documentation_metabox .documentation-content input, #documentation_metabox .documentation-content textarea {
+
+  width: 95%;
+}
+
+
+
+
+#documentation_metabox .documentation-content .removedocumentation:hover {
+  background: none repeat scroll 0 0 rgb(255, 134, 87);
+}
+
+#documentation_metabox .documentation-content .tab-new {
+  background: none repeat scroll 0 0 #a3dbff;
+}
+
+
+
+
+#documentation_metabox .documentation-content {
+
+}
+
+#documentation_metabox .documentation-content tr {
+  background: none repeat scroll 0 0 rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(153, 153, 153);
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+#documentation_metabox .documentation-content .section-dragHandle {
+  cursor: move;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+}
+
+
+#documentation_metabox .documentation-content .section-header {
+  border-bottom: 1px solid rgb(153, 153, 153);
+  padding: 5px 10px;
+}
+
+#documentation_metabox .documentation-content .documentation-title-preview {
+  display: inline-block;
+}
+#documentation_metabox .documentation-content .section-header .removedocumentation {
+  background: none repeat scroll 0 0 rgb(255, 91, 64);
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  margin-left: 20px;
+  text-align: center;
+  width: 20px;
+}
+
+#documentation_metabox .documentation-content .section-header label {
+  float: right;
+}
+
+
+
+
+
+
+#documentation_metabox .documentation-content .section-panel {
+  display: none;
+}
+
+
+#documentation_metabox .documentation-content .active .section-panel {
+  display: block;
+  padding: 25px 10px;
+  text-align: left;
+  background:#bde6fc;
+}
+
+#documentation_metabox .documentation-content .active .section-header{
+	background:#a7e1ff;
+
+}
+
+
+/*Front end CSS*/
+
+.documentation{}
+
+.documentation .doc-sidebar {
+  border-top: 1px solid rgb(153, 153, 153);
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+
+.documentation .side-title {
+  border-bottom: 1px solid rgb(153, 153, 153);
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.documentation .side-title:hover {
+  border-left: 4px solid rgb(76, 175, 252);
+}
+
+
+
+.documentation .doc-sections {
+  display: inline-block;
+  width: 75%;
+}
+
+.documentation .doc-section {
+  margin-bottom: 50px;
+  padding: 0 30px;
+}
+
+.documentation .doc-title {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  font-family: open sans;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+
+
+
+.documentation .doc-content {
+  font-size: 14px;
+}
+
+
+
+
+.documentation-archive {
+  text-align: center;
+}
+
+
+.documentation-archive .single {
+  display: inline-block;
+  margin: 40px 25px;
+  text-align: left;
+  vertical-align: top;
+  width: 250px;
+}
+
+.documentation-archive .single .thumb {
+  max-height: 180px;
+  overflow: hidden;
+}
+.documentation-archive .single .title {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.documentation-archive .single li {
+  list-style: outside none none;
+}
+
+
+
+/*   ###################paginate###########################   */
+.documentation-archive .paginate .page-numbers {
+    background: none repeat scroll 0 0 rgb(31, 191, 69);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 3px 0;
+    padding: 3px 8px;
+    text-decoration: none
+    }
+
+.documentation-archive .paginate .page-numbers:hover {
+    background: none repeat scroll 0 0 rgb(14, 140, 44)
+    }
+
+.documentation-archive .paginate .current {
+    background: none repeat scroll 0 0 rgb(14, 140, 44)
+    }
+
